@@ -1,38 +1,256 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.Header{
+  width: 100%;
+}
+.header{
+  display: flex;
+  width: 100%;
+  
+
+}
+.header h2{
+margin-left: 25px;
+color: darkgreen;
+padding: 10px;
+
+}
+.header h2:hover{
+  color: black;
+  cursor: pointer;
+  box-shadow: 0px 0px 1px black;
+}
+
+.Form{
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+border-radius: 25px;
+padding:15px;
+box-shadow: 0px 0px 5px black;
+max-width:800px ;
+min-width:500px ;
+align-items: center;
+}
+.Form > input{
+  background-color: black;
+  margin: 10px;
+  height: 25px;
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+  width: 80%;
+}
+.Form >select{
+  background-color: black;
+    margin: 10px;
+    height: 50px;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    width: 85%;
+}
+.Form> button{
+  height: 55px;
+  width: 100px;
+  font-size: 1.5rem;
+  background-color: white;
+  border: none;
+}
+.Form >button:hover{
+  cursor: pointer;
+  color: white;
+  background-color: black;
+
+  
+}
+::placeholder{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.autologin{
+  margin: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.Profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mover{
+  margin-right: 250px;
+}
+.Profile img{
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+}
+.swipe{
+  background: white;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 10px black;
+}
+.swipe img{
+  height: 300px;
+  width: 500px;
+  object-fit: cover;
+}
+.buttons{
+  display: flex;
+  justify-content: space-around;
+}
+.buttons button{
+  height: 75px;
+  width: 200px;
+  border-radius: 25px;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  opacity: 0.7;
+  margin: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Like{
+background-color: rgb(105, 202, 105);
+}
+.Dislike{
+  background-color: red;
+}
+.buttons button:hover{
+opacity: 1;
+cursor: pointer;
+}
+.imgcontainer{
+  display: flex;
+  align-items: center;
+}
+.smallimg{
+  height: 100px !important;
+  width: 100px !important ;
+  background: transparent !important;
+  margin: 10px;
+}
+.Likedcard{
+  box-shadow: 0 0 15px black;
+  border-radius: 25px;
+  margin: 15px;
+  width: 450px;
+  height: 400px;
+  
+  padding: 20px;
+  
+}
+.Likedcard img{
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.Filter{
+  display: flex;
+  flex-direction: column;
+}
+.Filter >select{
+  height: 50px;
+  font-size: 1.2rem;
+  text-align: center;
+  border: none;
+  box-shadow: 0 0 10px gray ;
+}
+.Filter >button{
+  height: 55px;
+    width: 150px;
+    font-size: 1.5rem;
+    background-color: white;
+    border: none;
+    align-self: center;
+    box-shadow: 0 0 5px;
+    border-radius: 25px;
+}
+.Filter>button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
+
+
+}
+.genderpick{
+  height: 50px;
+  width: 100px;
+  background-color: lightgray;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:15px;
+  color: white;
+  box-shadow:  0 0 5px black;
+  box-sizing: border-box;
+}
+.GenderPick{
+  display: flex;
+}
+.genderpick:hover{
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+.slider {
+  /* position: relative; */
+  
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.image {
+height: 300px !important;
+  width: 300px !important;
+  object-fit: cover !important;
+  margin-left: 65px;
+  
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: -250px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
 }
