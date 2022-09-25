@@ -6,7 +6,7 @@ function Swipecard({x,setnext,next,allcards}) {
 const {logedon,setliked}=useContext(mainContext)
 
 function Like(){
-
+console.log("hi")
 let user={
     username:logedon.username,
     Likedusername:x.username

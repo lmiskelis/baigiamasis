@@ -11,8 +11,8 @@ import TheyLike from './pages/TheyLike';
 import FilterPage from './pages/Filter';
 import { useEffect, useState } from 'react';
 import Header from './Components/Header';
-import { io } from 'socket.io-client';
-const socket = io.connect("http://localhost:4000")
+// import { io } from 'socket.io-client';
+// const socket = io.connect("http://localhost:4000")
 function App() {
 const [logedon,setlogedon]=useState()
 const [filter,setfilter]=useState({city:"",
@@ -35,7 +35,7 @@ const [likedME,setLikedme]=useState([])
     setliked,
     likedME,
     setLikedme,
-    socket
+    
   }
 
 
