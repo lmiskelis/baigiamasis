@@ -16,7 +16,7 @@ const socket = io.connect("http://localhost:4000")
 function App() {
 const [logedon,setlogedon]=useState()
 const [filter,setfilter]=useState({city:"",
-    gender:"",
+    gender:"MAN",
     ageTop:100,
     ageBottom:0,})
 const [allcards,setallcards]=useState([])

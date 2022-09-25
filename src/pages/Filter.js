@@ -2,7 +2,7 @@ import { useRef, useState,useContext } from "react";
 import mainContext from "../Context/mainContext";
 import MultiRangeSlider from "../Components/MultiRangeSlider";
 function FilterPage() {
-  const [manBorder,setmanBorder]=useState()
+  const [manBorder,setmanBorder]=useState("2px solid green")
   const [womanBorder,setwomanBorder]=useState()
   const[maxage,setmaxage]=useState()
   const[minage,setminage]=useState()
